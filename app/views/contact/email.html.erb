@@ -1,0 +1,35 @@
+<h1>Contact Us</h1>
+
+<%= form_tag("/contact/submit", method: "post") do %>
+    <%= label_tag(:name, "Name:") %>
+    <%= text_field_tag(:name) %>
+
+    <%= label_tag(:email, "Email:") %>
+    <%= text_field_tag(:email) %>
+
+    <%= label_tag(:content, "Message  :") %>
+    <%= text_area(:content, :post, cols: 40, rows: 10) %>
+
+    <%= submit_tag("Send") %>
+
+<% end %>
+
+
+
+
+<!--<div class="container">-->
+  <!--<form accept-charset="UTF-8" action="contact/submit" method="post">-->
+
+    <!--<label for="fname">Name</label>-->
+    <!--<input type="text" id="fname" name="firstname" placeholder="Your name..">-->
+
+    <!--<label for="lname">Email</label>-->
+    <!--<input type="text" id="email" name="email" placeholder="Your email..">-->
+
+    <!--<label for="subject">Subject</label>-->
+    <!--<textarea id="subject" name="subject" style="height:200px" placeholder="This item interets me, my phone is .."></textarea><br>-->
+
+    <!--<input type="submit" value="Submit">-->
+
+  <!--</form>-->
+<!--</div>-->

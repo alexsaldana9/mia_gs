@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+img {
+    width: 100px;
+}
+
+td {
+    font-size: medium;
+    /*text-align:center;*/
+
+}
+.table td{
+    vertical-align: middle;
+}
+
+.price {
+    padding-top: 60px;
+}
+
+.col-med-3 p {
+    font-size: 14px;
+}
+
+.col-med-3 h3 {
+    font-size: 16px;
+    align-content: center;
+}
