@@ -11,7 +11,7 @@
       <th>Price</th>
       <th>Category</th>
       <th>Image</th>
-      <th colspan="3"></th>
+      <th colspan="3"> Interested ?</th>
     </tr>
   </thead>
 
@@ -20,16 +20,17 @@
       <tr>
         <td><%= item.name %></td>
         <td><%= item.description %></td>
-        <!--<td><%= item.price %></td>-->
+
         <td class="price">$ <%= '%.2f' %  item.price %></td>
         <td><%= item.category %></td>
         <td>
           <img class="card-img-top">
-          <%= image_tag item.image %>
+          <!--add form tag for image - NOT WORKING-->
         </td>
         <td>
           <div id="contact" >
-            <a href="contact/email">I'm interedted - send me more info</a>
+            <a class="button" href="contact/email">I'm interested</a>
+            <!--<a href="contact/email">I'm interested</a>-->
           </div>
         </td>
       </tr>

@@ -31,6 +31,12 @@
     <%= form.text_field :category, id: :item_category %>
   </div>
 
+    <div class="field">
+      <%= form.label :image %>
+      <%= form.file_field :image, id: :item_image%>
+
+    </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
