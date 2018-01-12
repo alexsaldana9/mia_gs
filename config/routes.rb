@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'contact/email'
   post 'contact/submit', to: 'contact#submit'
 
